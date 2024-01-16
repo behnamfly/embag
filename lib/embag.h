@@ -23,11 +23,11 @@ class View;
 class Bag {
  public:
   Bag(const std::string &path) {
-    bag_impl_ = make_unique<BagFromFile>(this, path);
+      bag_impl_ = std::make_unique<BagFromFile>(this, path);
   }
 
   Bag(std::shared_ptr<const std::string>bytes) {
-    bag_impl_ = make_unique<BagFromBytes>(this, bytes);
+      bag_impl_ = std::make_unique<BagFromBytes>(this, bytes);
   }
 
   ~Bag() {
