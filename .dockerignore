@@ -1,6 +1,0 @@
-/*.bag
-bazel-bin
-bazel-embag
-bazel-out
-bazel-testlogs
-.git

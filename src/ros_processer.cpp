@@ -64,7 +64,6 @@ void ROSProcesser::processBagData(
 
         /*
         std::cout << std::fixed << message->timestamp.to_sec() << " : " << message->topic << std::endl;
-
         std::cout << "time is " << message->timestamp.secs << "." << message->timestamp.nsecs << std::endl;
         */
         if (message->topic == mountControlOrientationTopic) {
@@ -172,9 +171,6 @@ void ROSProcesser::processBagData(
                     }
                 }
             }
-
-            // Eigen::SparseMatrix<float> sparseMat =
-            //     m_pointcloud.pointsMatrix.sparseView();
 
             // vtkNew<vtkPoints> vtkpointcloudInWorld;
             // vtkNew<vtkPolyData> polyData;
